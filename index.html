@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esperanza y Misericordias de Jesucristo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVEGACIÓN
+  ========================================================= -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="#inicio" class="nav-brand">Esperanza y Misericordias</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#conocenos">CONÓCENOS</a></li>
+        <li><a href="#comunidad">COMUNIDAD</a></li>
+        <li><a href="#caridad">CARIDAD</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+        <!-- <li><a href="#nuevo">SOY NUEVO</a></li> -->
+        <!-- <li><a href="#musica">MÚSICA</a></li> -->
+        <li><a href="#" onclick="abrirModalDonar(); return false;">DONAR</a></li>
+        <!-- <li><a href="#envivo" class="btn-envivo">EN VIVO</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       HERO — imagen1.png
+  ========================================================= -->
+  <section class="hero" id="inicio">
+    <img
+      src="imagenes/imagen1.png"
+      alt="Congregación Esperanza y Misericordias de Jesucristo"
+      class="hero-bg"
+    />
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>
+          DOMINGO 11:00 AM y 1:00 PM<br />
+          MIÉRCOLES 7:00 PM
+        </h1>
+        <p class="hero-subtitle">Estudiamos la Biblia verso a verso.</p>
+        <a href="#ubicacion" class="btn-llegada">¿CÓMO LLEGO?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       COMUNIDAD — imagen2.png
+  ========================================================= -->
+  <section class="comunidad" id="comunidad">
+    <div class="comunidad-container">
+      <div class="comunidad-text">
+        <h2>Somos una familia unida</h2>
+        <p>
+          En <strong>Esperanza y Misericordias de Jesucristo</strong> recibimos
+          a personas de todas las edades: niños, jóvenes, adultos y adultos
+          mayores. Todos son bienvenidos en la mesa del Señor.
+        </p>
+        <p>
+          Nos caracteriza el amor fraternal y la unidad. Creemos que la Iglesia
+          es el cuerpo de Cristo y cada miembro es indispensable. Aquí
+          encontrarás amigos, mentores y una familia que camina contigo en la fe.
+        </p>
+        <!-- <a href="#nuevo" class="btn-dark">SOY NUEVO</a> -->
+      </div>
+      <div class="comunidad-img-wrap">
+        <img
+          src="imagenes/imagen2.png"
+          alt="Comunidad unida de todas las edades"
+          class="comunidad-img"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PASTOR
+  ========================================================= -->
+  <section class="pastor" id="pastor">
+    <div class="pastor-container">
+      <div class="pastor-img-wrap">
+        <img
+          src="imagenes/imagen4.png"
+          alt="Pastor Luis Alberto Vicencio Ibarra"
+          class="pastor-img"
+        />
+      </div>
+      <div class="pastor-text">
+        <span class="pastor-label">Nuestro Pastor</span>
+        <h2>Luis Alberto Vicencio Ibarra</h2>
+        <p>
+          El Pastor Luis Alberto nació en Poza Rica de Hidalgo, Veracruz. Desde joven
+          sintió el llamado de Dios para servir a Su pueblo y dedicó su vida al estudio
+          profundo de las Escrituras. Se formó en teología bíblica con el firme
+          convencimiento de que la Palabra de Dios es suficiente para transformar vidas.
+        </p>
+        <p>
+          Con más de dos décadas de ministerio, ha guiado a la congregación
+          <strong>Esperanza y Misericordias de Jesucristo</strong> con humildad,
+          integridad y un corazón pastoral genuino. Su enseñanza expositiva,
+          verso a verso, ha formado discípulos firmes en la fe dentro y fuera
+          de la región.
+        </p>
+        <div class="pastor-mision">
+          <h3>Misión</h3>
+          <p>
+            "Predicar a Cristo crucificado y resucitado, edificar la Iglesia
+            en la sana doctrina y extender el Reino de Dios a toda persona,
+            sin importar su origen, edad o condición."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONÓCENOS
+  ========================================================= -->
+  <section class="conocenos" id="conocenos">
+    <div class="conocenos-container">
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        Somos una iglesia cristiana evangélica que cree en la autoridad de las
+        Escrituras y en el evangelio de Jesucristo. Nuestra misión es glorificar
+        a Dios haciendo discípulos de todas las naciones, comenzando en Poza
+        Rica y el norte de Veracruz.
+      </p>
+      <div class="valores">
+        <div class="valor">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>La Biblia</h3>
+          <p>Enseñamos expositivamente la Palabra de Dios, verso a verso.</p>
+        </div>
+        <div class="valor">
+          <i class="fa-solid fa-cross"></i>
+          <h3>El Evangelio</h3>
+          <p>Cristo murió por nuestros pecados y resucitó para nuestra justificación.</p>
+        </div>
+        <div class="valor">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>Comunidad</h3>
+          <p>Nos amamos unos a otros y crecemos juntos en la fe.</p>
+        </div>
+        <div class="valor">
+          <i class="fa-solid fa-hands-praying"></i>
+          <h3>Oración</h3>
+          <p>La oración es el aliento de nuestra iglesia y nuestra dependencia de Dios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       OBRAS DE CARIDAD — imagen3.png
+  ========================================================= -->
+  <section class="caridad" id="caridad">
+    <div class="caridad-foto">
+      <img
+        src="imagenes/imagen3.png"
+        alt="Obras de caridad de la iglesia"
+        class="caridad-img-top"
+      />
+    </div>
+    <div class="caridad-contenido">
+      <div class="caridad-inner">
+        <span class="caridad-label">Sirviendo al prójimo</span>
+        <h2>Amor en acción</h2>
+        <p>
+          Creemos que la fe sin obras es muerta. Por eso, como iglesia nos
+          movilizamos constantemente para llevar la esperanza de Cristo
+          a quienes más lo necesitan.
+        </p>
+        <div class="caridad-items">
+          <div class="caridad-item">
+            <i class="fa-solid fa-hospital"></i>
+            <div>
+              <h4>Apoyo en hospitales</h4>
+              <p>Visitamos pacientes y familias ofreciéndoles apoyo espiritual,
+              oración y los sagrados alimentos para el cuerpo y el alma.</p>
+            </div>
+          </div>
+          <div class="caridad-item">
+            <i class="fa-solid fa-shirt"></i>
+            <div>
+              <h4>Donación de ropa</h4>
+              <p>Organizamos colectas y regalamos prendas a familias en zonas
+              vulnerables de Poza Rica y sus alrededores.</p>
+            </div>
+          </div>
+          <div class="caridad-item">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <div>
+              <h4>Ayuda comunitaria</h4>
+              <p>Extendemos nuestra mano a los más necesitados a través de
+              brigadas de servicio, alimentos y acompañamiento integral.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       UBICACIÓN — Google Maps
+  ========================================================= -->
+  <section class="ubicacion" id="ubicacion">
+    <h2 class="ubicacion-titulo">UBICACIÓN</h2>
+    <div class="mapa-container">
+      <iframe
+        title="Ubicación de la iglesia"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.9!2d-97.44466629999999!3d20.5606913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da1551192831a5%3A0x8b091fe0fc6503b!2sC.%205%20Ote.%2C%20Independencia%2C%2093300%20Poza%20Rica%20de%20Hidalgo%2C%20Ver.!5e0!3m2!1ses!2smx!4v1687000000000"
+        width="100%"
+        height="480"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="ubicacion-info">
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        C. 5 Oriente, Independencia, 93300 Poza Rica de Hidalgo, Ver., México
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer>
+    <!-- Franja de redes sociales -->
+    <div class="footer-social-bar">
+      <a href="https://www.facebook.com/EYMJ2018" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+
+    <!-- Columnas del pie -->
+    <div class="footer-columns">
+      <!-- Reuniones -->
+      <div class="footer-col" id="nuevo">
+        <h4>REUNIONES</h4>
+        <p><strong>Domingos</strong></p>
+        <p>11:00 AM</p>
+        <p><strong>Jueves</strong></p>
+        <p>7:00 PM</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-col" id="contacto">
+        <h4>CONTACTO</h4>
+        <button class="btn-contacto" onclick="abrirModalContacto()">
+          <i class="fa-solid fa-paper-plane"></i>
+          Contactar a la iglesia
+        </button>
+      </div>
+
+      <!-- Síguenos -->
+      <div class="footer-col">
+        <h4>SÍGUENOS</h4>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>© 2026 Esperanza y Misericordias de Jesucristo · Poza Rica, Veracruz</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       MODAL DE DONACIÓN
+  ========================================================= -->
+  <div class="modal-overlay" id="modalDonar" role="dialog" aria-modal="true" aria-labelledby="donarTitulo">
+    <div class="modal-box modal-donar">
+      <button class="modal-cerrar" onclick="cerrarModalDonar()" aria-label="Cerrar">&times;</button>
+
+      <div class="modal-icono donar-icono"><i class="fa-solid fa-heart"></i></div>
+      <h3 id="donarTitulo">Apoya nuestra misión</h3>
+      <p>Tu donativo sostiene la obra de Dios en Poza Rica.<br>En MercadoPago podrás elegir el monto que desees dar.</p>
+
+      <a
+        class="modal-btn modal-btn--donar"
+        href="https://link.mercadopago.com.mx/iglesiaesperazna"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="cerrarModalDonar()"
+      >
+        <i class="fa-solid fa-circle-dollar-to-slot"></i> Donar con MercadoPago
+      </a>
+
+      <p class="donar-nota"><i class="fa-solid fa-lock"></i> Pago seguro procesado por MercadoPago</p>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL DE CONTACTO
+  ========================================================= -->
+  <div class="modal-overlay" id="modalContacto" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-box">
+      <button class="modal-cerrar" onclick="cerrarModalContacto()" aria-label="Cerrar">&times;</button>
+      <div class="modal-icono"><i class="fa-solid fa-comments"></i></div>
+      <h3 id="modalTitulo">¿Cómo deseas contactarnos?</h3>
+      <p>Elige la opción que prefieras y con gusto te atendemos.</p>
+      <div class="modal-opciones">
+        <a
+          class="modal-btn modal-btn--whatsapp"
+          href="https://wa.me/527821444642?text=Hola%2C%20deseo%20ponerme%20en%20contacto%20para%20recibir%20informaci%C3%B3n%20sobre%20la%20iglesia"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a class="modal-btn modal-btn--tel" href="tel:7821444642">
+          <i class="fa-solid fa-phone"></i> Teléfono
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- Modal de donación ---
+    function abrirModalDonar() {
+      document.getElementById('modalDonar').classList.add('activo');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarModalDonar() {
+      document.getElementById('modalDonar').classList.remove('activo');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('modalDonar').addEventListener('click', function(e) {
+      if (e.target === this) cerrarModalDonar();
+    });
+
+    // --- Modal de contacto ---
+    function abrirModalContacto() {
+      document.getElementById('modalContacto').classList.add('activo');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarModalContacto() {
+      document.getElementById('modalContacto').classList.remove('activo');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('modalContacto').addEventListener('click', function(e) {
+      if (e.target === this) cerrarModalContacto();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') cerrarModalContacto();
+    });
+
+    // --- Menú hamburguesa ---
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    navToggle.addEventListener('click', function() {
+      const abierto = navLinks.classList.toggle('nav-open');
+      this.classList.toggle('abierto', abierto);
+      this.setAttribute('aria-expanded', abierto);
+    });
+    // Cerrar al hacer clic en un enlace
+    navLinks.querySelectorAll('a').forEach(function(enlace) {
+      enlace.addEventListener('click', function() {
+        navLinks.classList.remove('nav-open');
+        navToggle.classList.remove('abierto');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
