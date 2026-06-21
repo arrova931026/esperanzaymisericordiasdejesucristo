@@ -3,14 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esperanza y Misericordias de Jesucristo</title>
+  <title>Esperanza y Misericordias de Jesucristo | Iglesia en Poza Rica, Veracruz</title>
+
+  <!-- ── SEO básico ─────────────────────────────────────────── -->
+  <meta name="description" content="Iglesia cristiana en Poza Rica, Veracruz. Reuniones los domingos 11:00 AM y 1:00 PM, y jueves 7:00 PM. Estudiamos la Biblia verso a verso. ¡Todos son bienvenidos!" />
+  <meta name="keywords" content="iglesia Poza Rica, iglesia cristiana Veracruz, Esperanza y Misericordias de Jesucristo, estudio bíblico Poza Rica, iglesia evangélica Poza Rica" />
+  <meta name="author" content="Iglesia Esperanza y Misericordias de Jesucristo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://esperanzaymisericordias.mx/" />
+
+  <!-- ── Open Graph (Facebook, WhatsApp, LinkedIn) ─────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://esperanzaymisericordias.mx/" />
+  <meta property="og:title" content="Esperanza y Misericordias de Jesucristo | Iglesia en Poza Rica" />
+  <meta property="og:description" content="Iglesia cristiana en Poza Rica, Veracruz. Reuniones domingos 11:00 AM y 1:00 PM, jueves 7:00 PM. Estudiamos la Biblia verso a verso. ¡Todos son bienvenidos!" />
+  <meta property="og:image" content="https://esperanzaymisericordias.mx/imagenes/imagen1.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Congregación Esperanza y Misericordias de Jesucristo en Poza Rica, Veracruz" />
+  <meta property="og:site_name" content="Esperanza y Misericordias de Jesucristo" />
+  <meta property="og:locale" content="es_MX" />
+
+  <!-- ── Twitter / X Card ──────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Esperanza y Misericordias de Jesucristo | Iglesia en Poza Rica" />
+  <meta name="twitter:description" content="Iglesia cristiana en Poza Rica, Veracruz. ¡Todos son bienvenidos!" />
+  <meta name="twitter:image" content="https://esperanzaymisericordias.mx/imagenes/imagen1.png" />
+
   <link rel="stylesheet" href="styles.css" />
+  <!-- Preconectar al CDN para reducir latencia -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <!-- Precargar imagen hero (primera imagen visible) -->
+  <link rel="preload" href="imagenes/imagen1.png" as="image" />
+  <!-- Font Awesome cargado de forma asíncrona (no bloquea el render) -->
   <link
-    rel="stylesheet"
+    rel="preload"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </noscript>
 </head>
 <body>
 
@@ -81,6 +117,7 @@
           src="imagenes/imagen2.png"
           alt="Comunidad unida de todas las edades"
           class="comunidad-img"
+          loading="lazy"
         />
       </div>
     </div>
@@ -96,6 +133,7 @@
           src="imagenes/imagen4.png"
           alt="Pastor Luis Alberto Vicencio Ibarra"
           class="pastor-img"
+          loading="lazy"
         />
       </div>
       <div class="pastor-text">
@@ -172,6 +210,7 @@
         src="imagenes/imagen3.png"
         alt="Obras de caridad de la iglesia"
         class="caridad-img-top"
+        loading="lazy"
       />
     </div>
     <div class="caridad-contenido">
