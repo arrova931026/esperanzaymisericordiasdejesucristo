@@ -36,7 +36,7 @@
   <!-- Preconectar al CDN para reducir latencia -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <!-- Precargar imagen hero (primera imagen visible) -->
-  <link rel="preload" href="imagenes/imagen1.png" as="image" />
+  <link rel="preload" href="imagenes/imagen1.webp" as="image" type="image/webp" />
   <!-- Font Awesome cargado de forma asíncrona (no bloquea el render) -->
   <link
     rel="preload"
@@ -78,15 +78,18 @@
        HERO — imagen1.png
   ========================================================= -->
   <section class="hero" id="inicio">
-    <img
-      src="imagenes/imagen1.png"
-      alt="Congregación Esperanza y Misericordias de Jesucristo"
-      class="hero-bg"
-    />
+    <picture>
+      <source srcset="imagenes/imagen1.webp" type="image/webp" />
+      <img
+        src="imagenes/imagen1.png"
+        alt="Congregación Esperanza y Misericordias de Jesucristo"
+        class="hero-bg"
+      />
+    </picture>
     <div class="hero-overlay">
       <div class="hero-content">
         <h1>
-          DOMINGO 11:00 AM<br />
+          DOMINGOS 10:00 AM<br />
           JUEVES 7:00 PM
         </h1>
         <p class="hero-subtitle">Te invitamos a que formes parte de nuestra comunidad.</p>
@@ -115,12 +118,15 @@
         <!-- <a href="#nuevo" class="btn-dark">SOY NUEVO</a> -->
       </div>
       <div class="comunidad-img-wrap">
-        <img
-          src="imagenes/imagen2.png"
-          alt="Comunidad unida de todas las edades"
-          class="comunidad-img"
-          loading="lazy"
-        />
+        <picture>
+          <source srcset="imagenes/imagen2.webp" type="image/webp" />
+          <img
+            src="imagenes/imagen2.png"
+            alt="Comunidad unida de todas las edades"
+            class="comunidad-img"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
   </section>
@@ -131,12 +137,15 @@
   <section class="pastor" id="pastor">
     <div class="pastor-container">
       <div class="pastor-img-wrap">
-        <img
-          src="imagenes/imagen4.png"
-          alt="Pastor Luis Alberto Vicencio Ibarra"
-          class="pastor-img"
-          loading="lazy"
-        />
+        <picture>
+          <source srcset="imagenes/imagen4.webp" type="image/webp" />
+          <img
+            src="imagenes/imagen4.png"
+            alt="Pastor Luis Alberto Vicencio Ibarra"
+            class="pastor-img"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="pastor-text">
         <span class="pastor-label">Nuestro Pastor</span>
@@ -208,12 +217,15 @@
   ========================================================= -->
   <section class="caridad" id="caridad">
     <div class="caridad-foto">
-      <img
-        src="imagenes/imagen3.png"
-        alt="Obras de caridad de la iglesia"
-        class="caridad-img-top"
-        loading="lazy"
-      />
+      <picture>
+        <source srcset="imagenes/imagen3.webp" type="image/webp" />
+        <img
+          src="imagenes/imagen3.png"
+          alt="Obras de caridad de la iglesia"
+          class="caridad-img-top"
+          loading="lazy"
+        />
+      </picture>
     </div>
     <div class="caridad-contenido">
       <div class="caridad-inner">
@@ -262,7 +274,7 @@
     <div class="mapa-container">
       <iframe
         title="Ubicación de la iglesia"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.9!2d-97.44466629999999!3d20.5606913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da1551192831a5%3A0x8b091fe0fc6503b!2sC.%205%20Ote.%2C%20Independencia%2C%2093300%20Poza%20Rica%20de%20Hidalgo%2C%20Ver.!5e0!3m2!1ses!2smx!4v1687000000000"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.9!2d-97.4428482!3d20.5604172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJzM3LjUiTiA5N8KwMjYnMzQuMyJX!5e0!3m2!1ses!2smx!4v1722470400000"
         width="100%"
         height="480"
         style="border:0;"
